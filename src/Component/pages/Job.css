@@ -1,0 +1,122 @@
+/* src/styles/Jobs.css */
+
+.jobs-page-container {
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.back-btn {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #b8860b;
+}
+
+.job-portal-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Jobs List */
+.jobs-list {
+  flex: 0 0 70%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.jobs-list h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.job-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.job-details {
+  flex: 1;
+}
+
+.job-card h4 {
+  margin: 0 0 10px;
+  color: #111;
+  font-size: 1.2rem;
+}
+
+.job-card p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.job-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-card button:hover {
+  background-color: #218838;
+}
+
+/* Applied Jobs */
+.applied-jobs {
+  flex: 0 0 30%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.applied-jobs h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.applied-jobs .job-card {
+  padding: 15px;
+  background-color: #fefefe;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .job-portal-container {
+    flex-direction: column;
+  }
+
+  .jobs-list,
+  .applied-jobs {
+    flex: 1 1 100%;
+  }
+}
